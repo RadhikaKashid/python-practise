@@ -1,0 +1,26 @@
+# A very basic sample class
+class EmployeeForBnp:
+    name='radhika'    # it is a class atrribute associated with the class
+    join_DT='2022-08-29'
+    city='Mumbai'
+
+    def printObj(self):
+        print(f'the name is {self.name}')
+        
+    @staticmethod
+    def greet():
+        print('Good Day!!')
+
+
+a=EmployeeForBnp()  #a basic object
+b=EmployeeForBnp()
+
+print(a.name)
+b.name='krishna'    ### instnece atttribute not associated with the class
+                    ### it associated with the b objects only
+print(b.name)
+print(a.city)
+a.printObj()
+a.greet()
+EmployeeForBnp.greet()
+
